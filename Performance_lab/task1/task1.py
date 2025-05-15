@@ -13,6 +13,8 @@ args = parser.parse_args()
 n = args.n
 m = args.m
 
+print("Начало выполнения программы")
+
 res = []
 arr = cycle(range(1, n + 1))
 current = next(arr)
@@ -22,4 +24,5 @@ while True:
         current = next(arr)
     if current == 1:
         break
-print(''.join(res))
+print('_' * 42)
+print('Результат:', ''.join(res))
